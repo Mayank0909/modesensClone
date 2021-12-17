@@ -110,6 +110,10 @@ function show() {
 		var addcart = document.createElement("button");
 		addcart.textContent = "Add to cart";
 		addcart.setAttribute("class", "addcartbut");
+		var res = `${elem.id}`;
+		addcart.addEventListener("click", function () {
+			add(elem, index);
+		});
 
 		md.append(div, brandName, pName, pPrice, addcart);
 
@@ -117,4 +121,29 @@ function show() {
 	});
 }
 
+function add(elem, index) {
+	let cart;
+	let arr;
+	let added = false;
+	cart = localStorage.getItem("cartItem");
+
+	if (cart == null) {
+		arr = [];
+	} else {
+		arr = JSON.parse(localStorage.getItem("cartItem"));
+	}
+
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i].id == elem.id) {
+			added = true;
+			alert("Product already added");
+			break;
+		}
+	}
+
+	if (!added) {
+		arr.push(elem);
+		localStorage.setItem("cartItem", JSON.stringify(arr));
+	}
+}
 show();
