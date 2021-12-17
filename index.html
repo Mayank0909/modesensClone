@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="/your-path-to-fontawesome/css/fontawesome.css"
+			rel="stylesheet"
+		/>
+		<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+		<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+		<style>
+			* {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+					Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+			}
+
+			.header {
+				position: relative;
+				height: 50px;
+				justify-content: space-between;
+				padding: 0.5rem 1rem;
+				box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+				z-index: 10;
+				background-color: white;
+			}
+			.sticky {
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+			.textc {
+				text-align: center !important;
+			}
+
+			.marg {
+				margin: auto;
+			}
+
+			.alignc {
+				align-items: center;
+			}
+
+			.dflex {
+				display: flex;
+				align-items: center;
+			}
+
+			.nav-logo {
+				position: absolute;
+				align-content: flex-start;
+				transform: translateX(-50%);
+			}
+
+			.banner1 {
+				width: 90%;
+				height: 400px;
+			}
+
+			.banner2 {
+				width: 90%;
+				height: 285px;
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
+
+			.banner1 > img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+
+			.banner2 > img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+
+			.jcc {
+				justify-content: center;
+			}
+
+			.center {
+				align-items: center;
+				justify-content: center;
+				margin: auto;
+			}
+
+			.ma {
+				margin: auto;
+			}
+
+			.hf {
+				height: 100% !important;
+			}
+
+			.wf {
+				width: 100% !important;
+			}
+
+			.selec {
+				font-weight: 700;
+				font-size: 25px;
+			}
+
+			.t2 {
+				color: #6c757d;
+				font-weight: 300px !important;
+				font-size: 20px;
+			}
+
+			.secdiv {
+				height: 120px;
+				width: 100%;
+				margin: auto;
+				text-align: center;
+			}
+
+			.gussi {
+				height: 250px;
+				width: 100%;
+				margin: auto;
+				text-align: center;
+			}
+
+			.box {
+				display: grid;
+				grid-template-columns: repeat(6, 1fr);
+				grid-template-rows: 50%;
+				margin: auto;
+				justify-content: center;
+			}
+
+			.box > div {
+				width: 60%;
+				height: 80%;
+				margin: auto;
+				margin-bottom: 20px;
+			}
+
+			.sale {
+				height: 700px;
+				width: 90%;
+				margin: auto;
+			}
+
+			.t3 {
+				text-align: right;
+				font-size: 15px;
+				font-weight: 500;
+			}
+
+			.saled {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				margin: auto;
+				justify-content: center;
+				grid-gap: 3%;
+			}
+
+			.saleimg {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.saleimg > img {
+				width: 100%;
+				height: 480px;
+			}
+
+			.salet1 {
+				font-size: 20px;
+				font-weight: 700px;
+			}
+
+			.salet2 {
+				font-weight: 500px;
+			}
+
+			.salebut {
+				border: 1px solid #8e8e8e;
+				background-color: transparent;
+				color: black;
+				padding: 10px 15px;
+				font-size: medium;
+			}
+
+			.salebut:hover {
+				background-color: black;
+				color: white;
+			}
+
+			.trenddiv {
+				height: 400px;
+				width: 90%;
+				margin-bottom: 100px;
+				line-height: 15px;
+			}
+
+			.trend {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-gap: 1%;
+				justify-content: center;
+				margin: auto;
+			}
+
+			.trend > div {
+				border: 1px solid #f5f5f5;
+				padding: 10px;
+			}
+
+			.trend > div > div > img {
+				height: 100%;
+				width: 220px;
+			}
+
+			.commudiv {
+				height: 350px;
+				width: 90%;
+				line-height: 15px;
+				margin-top: 50px;
+			}
+
+			.commu {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: 285px;
+				grid-gap: 1%;
+				justify-content: center;
+				margin: auto;
+			}
+
+			.commu > div {
+				border: 1px solid #f5f5f5;
+				padding: 10px;
+			}
+
+			.commu > div > div > img {
+				max-height: 268px;
+				max-width: 270px;
+			}
+
+			.foot1 {
+				margin: 0;
+				font-size: 15.5px;
+				color: #1c1c1c;
+				letter-spacing: 0.5px;
+				font-weight: 400;
+				text-align: left;
+				background-color: #fff;
+			}
+
+			.footdiv {
+				height: 286px;
+				width: 95%;
+				border-top: 1px solid black;
+				border-bottom: 1px solid black;
+				margin: auto;
+				margin-top: 50px;
+			}
+
+			.foot {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+				grid-template-rows: 285px;
+				grid-gap: 1%;
+				justify-content: center;
+				margin: auto;
+			}
+
+			.footdiv > div > div > h4 {
+				margin-top: 60px;
+			}
+
+			.footdiv > div > div > p {
+				color: #7f7f7f;
+				font-size: 14px;
+				line-height: 10px;
+			}
+
+			.footdiv > div > div > p:hover {
+				text-decoration: underline;
+			}
+
+			.iosdiv {
+				display: inline-block;
+				width: 185px;
+				height: 48px;
+			}
+
+			.ios {
+				width: 21px;
+				height: 31px;
+				display: inline-block;
+			}
+
+			.ios > img {
+				height: 100%;
+				width: 100%;
+			}
+
+			.iost {
+				width: 108px;
+				height: 17px;
+				margin-left: 10px;
+				font-size: 12px;
+				line-height: 16px;
+				display: inline-block;
+				color: #7f7f7f;
+			}
+
+			.ios2div {
+				display: inline-block;
+				width: 185px;
+				height: 17px;
+				margin-top: 15px;
+			}
+
+			.ios2 {
+				width: 21px;
+				height: 17px;
+				display: inline-block;
+			}
+
+			.ios2 > img {
+				height: 100%;
+				width: 100%;
+			}
+
+			.iost2 {
+				width: 108px;
+				height: 48px;
+				margin-left: 10px;
+				font-size: 12px;
+				line-height: 16px;
+				display: inline-block;
+				color: #7f7f7f;
+			}
+
+			.submarg {
+				margin-top: 20px;
+			}
+
+			.foot2t {
+				font-size: 14px;
+				color: #1c1c1c;
+				letter-spacing: 0.5px;
+				font-weight: 400;
+				line-height: 1.5;
+				text-align: left;
+			}
+
+			.foot2div {
+				height: 200px;
+				margin: auto;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.foot2left {
+				width: 180px;
+				height: 42px;
+				border: 1px solid green;
+				margin: auto;
+				margin-inline-start: 10px;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.foot2right {
+				width: 304px;
+				height: 50px;
+				border: 1px solid green;
+				margin: auto;
+				margin-inline-end: 10px;
+			}
+
+			.footimgleft {
+				width: 31px;
+				height: 41px;
+				margin-left: 10px;
+			}
+
+			.footimgleft > img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.footmini1 {
+				width: 30px;
+				height: 30px;
+				display: inline-block;
+				margin-left: 10px;
+			}
+
+			.footmini {
+				width: 50px;
+				height: 50px;
+				display: inline-block;
+				margin: auto;
+				margin-left: 10px;
+			}
+
+			.footmini1 > img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.footmini > img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.footimgt {
+				display: inline-block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="header dflex sticky">
+			<div>
+				<a class="navlogo" href="/"
+					><img
+						src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg"
+						width="147"
+						alt="logo"
+				/></a>
+			</div>
+			<div>WOMEN</div>
+			<div>MEN</div>
+			<div>KIDS</div>
+			<div>HOME</div>
+			<div>BEAUTY</div>
+			<div>OFFERS</div>
+			<div>DESIGNERS</div>
+			<div>COMMUNITY</div>
+			<div>WHY MODESENS</div>
+			<div>
+				<img
+					src="https://cdn.modesens.com/static/img/20200612account_b2.svg"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="alignc"
+					src="	https://modesens.com/static/img/20200612search_img1.svg"
+					alt=""
+				/>
+				SEARCH
+			</div>
+		</header>
+		<div class="banner1 marg">
+			<img
+				src="https://modesens.com/banner/10169/getimg/?img=%2Fbanner%2F20211123Holiday%2BGift%2BGuide%2BBlog-1140x400-EN.jpg"
+			/>
+		</div>
+		<div class="banner2 marg">
+			<img
+				src="https://modesens.com/banner/10349/getimg/?img=%2Fbanner%2F20211209Holiday-Page-modesens-Web-EN.jpg"
+			/>
+		</div>
+		<div class="textc alignc secdiv">
+			<h1 class="selec">Select Partners</h1>
+			<p class="t2">
+				Compare across 400+ stores and 12,000+ brands to find the products you
+				want, at the best price.
+			</p>
+		</div>
+		<div class="gussi box alignc">
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-GUCCI-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-PRADA-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-SAINT-LAURENT-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-BOTTEGA-VENETA-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-BURBERRY-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-FENDI-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-VERSACE-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-BALENCIAGA-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-GIVENCHY-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-LOEWE-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-OFF-WHITE-logo.png"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="hf wf"
+					src="https://cdn.modesens.com/banner/20211014-VALENTINO-logo.png"
+					alt=""
+				/>
+			</div>
+		</div>
+		<div class="sale">
+			<p class="t3">VIEW MORE</p>
+			<div class="saled">
+				<div class="textc">
+					<div class="saleimg">
+						<img
+							src="https://cdn.modesens.com/banner/2021SeasonofSavings-modesens750x900.png"
+							alt=""
+						/>
+					</div>
+					<div>
+						<p class="salet1">New To Sale</p>
+						<p class="salet2">Holiday Must Haves</p>
+					</div>
+					<button class="salebut">SHOP NOW</button>
+				</div>
+				<div class="textc">
+					<div class="saleimg">
+						<img
+							src="https://cdn.modesens.com/banner/20211215-modesens-Shopbop-364x484-F.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<p class="salet1">Get yourself A Little Something...</p>
+						<p class="salet2">Up To 60% Off At SHOPBOP</p>
+					</div>
+					<button class="salebut">SHOP NOW</button>
+				</div>
+				<div class="textc">
+					<div class="saleimg">
+						<img
+							src="https://cdn.modesens.com/banner/20211214-modesens-FCettire-364x484-2.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<p class="salet1">FW21 Sale At CETTIRE</p>
+						<p class="salet2">Up To 50% Off</p>
+					</div>
+					<button class="salebut">SHOP NOW</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="trenddiv ma jcc textc">
+			<h2>Trending Now</h2>
+			<div class="trend">
+				<div>
+					<div>
+						<img
+							src="https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/212471F113000_1.jpg"
+							alt=""
+						/>
+					</div>
+					<p>STELLA MCCARTNEY</p>
+					<p>Trace Logo Detailed Vegetarian Leather</p>
+					<p>$312 - $725</p>
+					<p>32 stores</p>
+				</div>
+				<div>
+					<div>
+						<img
+							src="https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/212528F113009_1.jpg"
+							alt=""
+						/>
+					</div>
+					<p>JIMMY CHOO</p>
+					<p>Cora Crystal-emblished Leather Ankle</p>
+					<p>$608 - $1325</p>
+					<p>34 stores</p>
+				</div>
+				<div>
+					<div>
+						<img src="https://cdn.modesens.com/product/31133733_31" alt="" />
+					</div>
+					<p>JIMMY CHOO</p>
+					<p>Womans Caramel/crystal Cora Crystal</p>
+					<p>$705 - $1389</p>
+					<p>23 stores</p>
+				</div>
+				<div>
+					<div>
+						<img src="https://cdn.modesens.com/product/32145191_21" alt="" />
+					</div>
+					<p>STELLA MCCARTNEY</p>
+					<p>Trace Logo Detailed Vegetarian Leather</p>
+					<p>$382 - $794</p>
+					<p>29 stores</p>
+				</div>
+			</div>
+		</div>
+		<div class="dflex center">
+			<button class="salebut">SHOP NOW</button>
+		</div>
+
+		<div class="commudiv ma jcc textc">
+			<h2>Community Posts</h2>
+			<div class="commu">
+				<div>
+					<div>
+						<img src="https://cdn.modesens.com/umedia/1495919s" alt="" />
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="https://cdn.modesens.com/umedia/1495885s" alt="" />
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="https://cdn.modesens.com/umedia/1495848s" alt="" />
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="https://cdn.modesens.com/umedia/1487208s" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dflex center">
+			<button class="salebut">VIEW ALL</button>
+		</div>
+
+		<div class="footdiv">
+			<div class="foot foot1">
+				<div>
+					<h4>COSTOMER CARE</h4>
+					<p>Shoper Protection</p>
+					<p>loyalty program</p>
+					<p>Help Centre</p>
+					<p>Size Guides</p>
+					<p>Contact Us/ Feedback</p>
+					<p>Shipping/Returns</p>
+				</div>
+				<div>
+					<h4>INFORMATION</h4>
+					<p>About Us</p>
+					<p>Influencer Program</p>
+					<p>Partner Stores</p>
+					<p>Sitemap</p>
+				</div>
+				<div>
+					<h4>LEGAL</h4>
+					<p>Terms Of Use</p>
+					<p>Disclosure</p>
+					<p>Privacy Policy</p>
+					<p>Community Guidelines</p>
+				</div>
+				<div>
+					<h4>CONNECT WITH US</h4>
+					<div class="iosdiv">
+						<div class="ios">
+							<img
+								src="https://modesens.com/static/img/20181127add_app.svg"
+								alt=""
+							/>
+						</div>
+						<div class="iost">ModeSens App for IOS and Android</div>
+					</div>
+					<div class="ios2div">
+						<div class="ios2">
+							<img
+								src="https://modesens.com/static/img/20181127add_browse.svg"
+								alt=""
+							/>
+						</div>
+						<div class="iost2">Add TO Browser</div>
+					</div>
+				</div>
+				<div>
+					<h4>NEWSLATTER SIGN UP</h4>
+					<p>Email Adress</p>
+					<hr />
+					<input type="checkbox" name="Women's" id="women" />
+					<label for="women">Women's</label>
+					<input type="checkbox" name="Men's" id="men" />
+					<label for="men">Men's</label>
+					<div class="dflex center submarg">
+						<button class="salebut hf wf">SUBMIT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot2div">
+			<div>
+				<div class="foot2left">
+					<div class="footimgleft">
+						<img
+							src="https://cdn.modesens.com/static/img/20180905footer_logo.svg"
+							alt=""
+						/>
+					</div>
+					<div class="footimgt">© 2021, ModeSens Inc</div>
+				</div>
+				<div class="foot2right">
+					<div class="footmini1">
+						<img
+							src="https://cdn.modesens.com/static/img/20181008footer-pit.svg"
+							alt=""
+						/>
+					</div>
+					<div class="footmini1">
+						<img
+							src="https://cdn.modesens.com/static/img/20181008footer-tt.svg"
+							alt=""
+						/>
+					</div>
+					<div class="footmini">
+						<img
+							src="https://cdn.modesens.com/static/img/footer-p.svg"
+							alt=""
+						/>
+					</div>
+					<div class="footmini">
+						<img
+							src="	https://cdn.modesens.com/static/img/footer-fb.svg"
+							alt=""
+						/>
+					</div>
+					<div class="footmini">
+						<img
+							src="	https://cdn.modesens.com/static/img/footer-wx.svg"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
