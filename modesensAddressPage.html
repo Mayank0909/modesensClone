@@ -173,6 +173,10 @@
 				color: #fff;
 				line-height: 50px;
 			}
+			.address-button > a {
+				text-decoration: none;
+				color: white;
+			}
 
 			@media (max-width: 650px) {
 				.address-modal {
@@ -345,7 +349,9 @@
 							</div>
 						</div>
 
-						<button class="address-button">Save & Deliver</button>
+						<button class="address-button">
+							<a href="./modesensPayment.html"> Save & Deliver</a>
+						</button>
 					</div>
 				</form>
 			</div>
@@ -453,5 +459,7 @@
 			JSON.stringify(modesens_address_data)
 		);
 		alert("Added");
+
+		window.location.href = "./modesensPayment.html";
 	}
 </script>

@@ -1,481 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        position: relative;
-        background: url(https://cdn.cliqueinc.com/posts/284828/best-nordstrom-shopping-over-60-284828-1579002087434-main.700x0c.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      }
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				height: 100vh;
+				position: relative;
+				background: url(https://cdn.cliqueinc.com/posts/284828/best-nordstrom-shopping-over-60-284828-1579002087434-main.700x0c.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+					Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+			}
 
-      .modalmodesens {
-        box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-        z-index: 10;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 45.6%;
-        height: 550px;
-        background: #fff;
-        border-radius: 4px;
-        display: flex;
-        overflow: hidden;
-        max-height: 550px;
-        max-width: 700px;
-      }
+			.modalmodesens {
+				box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+				z-index: 10;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 45.6%;
+				height: 550px;
+				background: #fff;
+				border-radius: 4px;
+				display: flex;
+				overflow: hidden;
+				max-height: 550px;
+				max-width: 700px;
+			}
 
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(0.1px);
-        z-index: 5;
-      }
+			.overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.7);
+				backdrop-filter: blur(0.1px);
+				z-index: 5;
+			}
 
-      .signUp-left-section {
-        width: 44.57%;
-        height: 100%;
-        display: flex;
-        background: url(https://i.pinimg.com/564x/e7/1a/ad/e71aadd4e16211f95dbb5bfec217e1ac.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      }
+			.signUp-left-section {
+				width: 44.57%;
+				height: 100%;
+				display: flex;
+				background: url(https://i.pinimg.com/564x/e7/1a/ad/e71aadd4e16211f95dbb5bfec217e1ac.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
 
-      .signUp-left-section-content {
-        padding: 8.2% 4.5% 11.3% 10%;
-        height: 89%;
-        width: 85.25%;
-        display: flex;
-        flex-direction: column;
-      }
+			.signUp-left-section-content {
+				padding: 8.2% 4.5% 11.3% 10%;
+				height: 89%;
+				width: 85.25%;
+				display: flex;
+				flex-direction: column;
+			}
 
-      .signUp-left-section-content > h4 {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 40px;
-        color: #fff;
-        margin: 0 0 8%;
-        height: 38px;
-      }
+			.signUp-left-section-content > h4 {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+					Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+				font-weight: 600;
+				font-size: 28px;
+				line-height: 40px;
+				color: #fff;
+				margin: 0 0 8%;
+				height: 38px;
+			}
 
-      .signUp-left-section-features {
-        display: flex;
-        position: relative;
-      }
+			.signUp-left-section-features {
+				display: flex;
+				position: relative;
+			}
 
-      .signUp-left-section-features > img {
-        height: 16px;
-        width: 16px;
-        position: absolute;
-        top: 2px;
-        left: 0;
-      }
+			.signUp-left-section-features > img {
+				height: 16px;
+				width: 16px;
+				position: absolute;
+				top: 2px;
+				left: 0;
+			}
 
-      .signUp-left-section-features > div {
-        margin-left: 28px;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 0.16px;
-        line-height: 21px;
-        color: #fff;
-        margin-bottom: 18px;
-      }
+			.signUp-left-section-features > div {
+				margin-left: 28px;
+				font-weight: 500;
+				font-size: 16px;
+				letter-spacing: 0.16px;
+				line-height: 21px;
+				color: #fff;
+				margin-bottom: 18px;
+			}
 
-      .signUp-right-section {
-        width: 55.428%;
-        height: 100%;
-      }
+			.signUp-right-section {
+				width: 55.428%;
+				height: 100%;
+			}
 
-      .signUp-right-section-content {
-        left: 0;
-        padding-left: 8.3%;
-        padding-right: 8%;
-        padding-top: 6.7%;
-        height: 92.7%;
-      }
+			.signUp-right-section-content {
+				left: 0;
+				padding-left: 8.3%;
+				padding-right: 8%;
+				padding-top: 6.7%;
+				height: 92.7%;
+			}
 
-      .signUp-right-section-close-button {
-        border: 0;
-        top: 17px;
-        right: 16px;
-        z-index: 99;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        font-weight: 100;
-        cursor: pointer;
-      }
+			.signUp-right-section-close-button {
+				border: 0;
+				top: 17px;
+				right: 16px;
+				z-index: 99;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				font-weight: 100;
+				cursor: pointer;
+			}
 
-      .login-signUp-list {
-        border-bottom: 3px solid #f4f4f4;
-        list-style: none;
-        margin: 0 0 3%;
-        padding: 0;
-      }
+			.login-signUp-list {
+				border-bottom: 3px solid #f4f4f4;
+				list-style: none;
+				margin: 0 0 3%;
+				padding: 0;
+			}
 
-      .login-signUp-tab {
-        display: inline-block;
-        width: inherit;
-        font-size: 16px;
-        color: #666670;
-        cursor: pointer;
-        padding: 10px 29px;
-        line-height: 21px;
-        position: relative;
-        letter-spacing: 0.32px;
-        font-weight: 500;
-      }
+			.login-signUp-tab {
+				display: inline-block;
+				width: inherit;
+				font-size: 16px;
+				color: #666670;
+				cursor: pointer;
+				padding: 10px 29px;
+				line-height: 21px;
+				position: relative;
+				letter-spacing: 0.32px;
+				font-weight: 500;
+			}
 
-      .login-signUp-list > li:nth-child(2) {
-        border-bottom: 4px solid black;
-        color: black !important;
-        border-radius: 1px;
-      }
+			.login-signUp-list > li:nth-child(2) {
+				border-bottom: 4px solid black;
+				color: black !important;
+				border-radius: 1px;
+			}
 
-      .signUp-section {
-        display: flex;
-        flex-direction: column;
-        /* height: 340px; */
-      }
+			.signUp-section {
+				display: flex;
+				flex-direction: column;
+				/* height: 340px; */
+			}
 
-      .modesens-signUp-form {
-        display: block;
-        margin-top: 0em;
-      }
-      .signUp-section {
-        display: flex;
-        flex-direction: column;
-      }
+			.modesens-signUp-form {
+				display: block;
+				margin-top: 0em;
+			}
+			.signUp-section {
+				display: flex;
+				flex-direction: column;
+			}
 
-      .modesens-signUp-form-label {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 19px;
-        color: #393939;
-        display: block;
-        margin-bottom: 5px;
-      }
+			.modesens-signUp-form-label {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 19px;
+				color: #393939;
+				display: block;
+				margin-bottom: 5px;
+			}
 
-      .modesens-signUp-form-input {
-        border: 1px solid #c6c6c6;
-        border-radius: 4px;
-        height: 40px;
-        padding: 0 0 0 12px;
-        margin-top: 1%;
-        letter-spacing: 0.16px;
-        margin-bottom: 2%;
-        width: 97%;
-      }
+			.modesens-signUp-form-input {
+				border: 1px solid #c6c6c6;
+				border-radius: 4px;
+				height: 40px;
+				padding: 0 0 0 12px;
+				margin-top: 1%;
+				letter-spacing: 0.16px;
+				margin-bottom: 2%;
+				width: 97%;
+			}
 
-      .modesens-signUp-form-input:focus {
-        border: black solid 2px;
-      }
+			.modesens-signUp-form-input:focus {
+				border: black solid 2px;
+			}
 
-      .modesens-signUp-form-button {
-        background-color: black;
-        border-radius: 4px;
-        height: 40px;
-        padding: 0;
-        margin: 0;
-        color: #fff;
-        font-size: 16px;
-        letter-spacing: 0.32px;
-        line-height: 30px;
-        text-transform: uppercase;
-        font-weight: 500;
-        cursor: pointer;
-        box-shadow: none;
-        border: 0;
-        width: 100%;
-        margin-top: 2%;
-      }
+			.modesens-signUp-form-button {
+				background-color: black;
+				border-radius: 4px;
+				height: 40px;
+				padding: 0;
+				margin: 0;
+				color: #fff;
+				font-size: 16px;
+				letter-spacing: 0.32px;
+				line-height: 30px;
+				text-transform: uppercase;
+				font-weight: 500;
+				cursor: pointer;
+				box-shadow: none;
+				border: 0;
+				width: 100%;
+				margin-top: 2%;
+			}
 
-      .signUp-section-form-or {
-        margin: 32.8px 0 16px;
-        position: relative;
-      }
+			.signUp-section-form-or {
+				margin: 32.8px 0 16px;
+				position: relative;
+			}
 
-      .signUp-section-form-or > span {
-        font-weight: 400;
-        color: #161616;
-        font-size: 14px;
-        line-height: 19px;
-        padding: 0 14px;
-        background-color: #fff;
-        position: absolute;
-        z-index: 2;
-        bottom: 5px;
-        left: 43%;
-      }
+			.signUp-section-form-or > span {
+				font-weight: 400;
+				color: #161616;
+				font-size: 14px;
+				line-height: 19px;
+				padding: 0 14px;
+				background-color: #fff;
+				position: absolute;
+				z-index: 2;
+				bottom: 5px;
+				left: 43%;
+			}
 
-      .signUp-section-form-or > div {
-        position: absolute;
-        border-bottom: 1px solid #cdcfd2;
-        width: 100%;
-        height: 2px;
-        bottom: 9px;
-      }
+			.signUp-section-form-or > div {
+				position: absolute;
+				border-bottom: 1px solid #cdcfd2;
+				width: 100%;
+				height: 2px;
+				bottom: 9px;
+			}
 
-      .signUp-integration {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+			.signUp-integration {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
 
-      .signUp-icon-container {
-        display: inline-block;
-        border-radius: 4px !important;
-        width: 47%;
-        text-align: center;
-        border-radius: 4px;
-        padding: 12px 0;
-        border: 1px solid #e0e0e0;
-        cursor: pointer;
-      }
+			.signUp-icon-container {
+				display: inline-block;
+				border-radius: 4px !important;
+				width: 47%;
+				text-align: center;
+				border-radius: 4px;
+				padding: 12px 0;
+				border: 1px solid #e0e0e0;
+				cursor: pointer;
+			}
 
-      .signUp-icon-container > img {
-        vertical-align: middle;
-        width: 16px;
-      }
+			.signUp-icon-container > img {
+				vertical-align: middle;
+				width: 16px;
+			}
 
-      .signUp-icon-text {
-        font-size: 14px;
-        letter-spacing: 0.28px;
-        color: #525252;
-        margin-left: 8px;
-        vertical-align: middle;
-      }
+			.signUp-icon-text {
+				font-size: 14px;
+				letter-spacing: 0.28px;
+				color: #525252;
+				margin-left: 8px;
+				vertical-align: middle;
+			}
 
-      .signUp-section-footer {
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        transform: translateX(-8%);
-        width: 55%;
-      }
+			.signUp-section-footer {
+				position: absolute;
+				bottom: 0;
+				text-align: center;
+				transform: translateX(-8%);
+				width: 55%;
+			}
 
-      .signUp-section-footer > p {
-        padding-top: 14px;
-        border-top: 1px solid #c6c6c6;
-        font-size: 12px;
-        text-align: center;
-        color: #666;
-        line-height: 16px;
-        display: inline-block;
-        width: 100%;
-        position: relative;
-        content: "";
-        margin-top: 24px;
-      }
-    </style>
-  </head>
+			.signUp-section-footer > p {
+				padding-top: 14px;
+				border-top: 1px solid #c6c6c6;
+				font-size: 12px;
+				text-align: center;
+				color: #666;
+				line-height: 16px;
+				display: inline-block;
+				width: 100%;
+				position: relative;
+				content: "";
+				margin-top: 24px;
+			}
+		</style>
+	</head>
 
-  <body>
-    <div class="modalmodesens">
-      <div class="signUp-left-section"></div>
-      <div class="signUp-right-section">
-        <div class="signUp-right-section-content">
-          <div>
-            <img
-              src="https://img2.hkrtcdn.com/react/static/media/common/login/Closs.svg"
-              alt="close button"
-              class="signUp-right-section-close-button"
-            />
-            <ul class="login-signUp-list">
-              <li class="login-signUp-tab login-tab" id="modesens-login">
-                Login
-              </li>
-              <li class="login-signUp-tab signUp-tab" id="modesens-signUp">
-                Signup
-              </li>
-            </ul>
-            <div class="signUp-section">
-              <form class="modesens-signUp-form">
-                <label
-                  class="modesens-signUp-form-label"
-                  for="username_modesens"
-                  >Username</label
-                >
-                <input
-                  class="modesens-signUp-form-input"
-                  type="text"
-                  name="username_modesens"
-                  id="username_modesens"
-                />
+	<body>
+		<div class="modalmodesens">
+			<div class="signUp-left-section"></div>
+			<div class="signUp-right-section">
+				<div class="signUp-right-section-content">
+					<div>
+						<img
+							src="https://img2.hkrtcdn.com/react/static/media/common/login/Closs.svg"
+							alt="close button"
+							class="signUp-right-section-close-button"
+						/>
+						<ul class="login-signUp-list">
+							<li class="login-signUp-tab login-tab" id="modesens-login">
+								Login
+							</li>
+							<li class="login-signUp-tab signUp-tab" id="modesens-signUp">
+								Signup
+							</li>
+						</ul>
+						<div class="signUp-section">
+							<form class="modesens-signUp-form">
+								<label
+									class="modesens-signUp-form-label"
+									for="username_modesens"
+									>Username</label
+								>
+								<input
+									class="modesens-signUp-form-input"
+									type="text"
+									name="username_modesens"
+									id="username_modesens"
+								/>
 
-                <label for="email_modesens" class="modesens-signUp-form-label"
-                  >Email</label
-                >
-                <input
-                  class="modesens-signUp-form-input"
-                  type="text"
-                  name="email_modesens"
-                  id="email_modesens"
-                />
+								<label for="email_modesens" class="modesens-signUp-form-label"
+									>Email</label
+								>
+								<input
+									class="modesens-signUp-form-input"
+									type="text"
+									name="email_modesens"
+									id="email_modesens"
+								/>
 
-                <label
-                  for="password_modesens"
-                  class="modesens-signUp-form-label"
-                  >Password</label
-                >
-                <input
-                  class="modesens-signUp-form-input"
-                  type="password"
-                  name="password_modesens"
-                  id="password_modesens"
-                />
+								<label
+									for="password_modesens"
+									class="modesens-signUp-form-label"
+									>Password</label
+								>
+								<input
+									class="modesens-signUp-form-input"
+									type="password"
+									name="password_modesens"
+									id="password_modesens"
+								/>
 
-                <button class="modesens-signUp-form-button">Sign Up</button>
-              </form>
+								<button class="modesens-signUp-form-button">Sign Up</button>
+							</form>
 
-              <div class="signUp-section-form-or">
-                <span>or</span>
-                <div></div>
-              </div>
+							<div class="signUp-section-form-or">
+								<span>or</span>
+								<div></div>
+							</div>
 
-              <div class="signUp-integration">
-                <div class="signUp-icon-container">
-                  <img
-                    src="https://img2.hkrtcdn.com/react/static/media/common/Logo%20Google.svg"
-                    alt="google"
-                  />
-                  <span class="signUp-icon-text">Google</span>
-                </div>
-                <div class="signUp-icon-container">
-                  <img
-                    src="https://img10.hkrtcdn.com/react/static/media/common/F_icon.svg"
-                    alt="facebook"
-                  />
-                  <span class="signUp-icon-text">Facebook</span>
-                </div>
-              </div>
+							<div class="signUp-integration">
+								<div class="signUp-icon-container">
+									<img
+										src="https://img2.hkrtcdn.com/react/static/media/common/Logo%20Google.svg"
+										alt="google"
+									/>
+									<span class="signUp-icon-text">Google</span>
+								</div>
+								<div class="signUp-icon-container">
+									<img
+										src="https://img10.hkrtcdn.com/react/static/media/common/F_icon.svg"
+										alt="facebook"
+									/>
+									<span class="signUp-icon-text">Facebook</span>
+								</div>
+							</div>
 
-              <div class="signUp-section-footer">
-                <p>
-                  By signing up you agree to our
-                  <a
-                    href="https://www.modesens.com/hk/TerfvfdgvfbgfmsConditions.action9"
-                    >Terms and Condition</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+							<div class="signUp-section-footer">
+								<p>
+									By signing up you agree to our
+									<a
+										href="https://www.modesens.com/hk/TerfvfdgvfbgfmsConditions.action9"
+										>Terms and Condition</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <div class="overlay"></div>
-  </body>
+		<div class="overlay"></div>
+	</body>
 </html>
 <script>
-  let signUp_close_button = document.querySelector(
-    ".signUp-right-section-close-button"
-  );
-  let modesens_login = document.getElementById("modesens-login");
-  let modesens_signUp_form = document.querySelector(".modesens-signUp-form");
-  let modesens_signUp_form_button = document.querySelector(
-    ".modesens-signUp-form-button"
-  );
+	let signUp_close_button = document.querySelector(
+		".signUp-right-section-close-button"
+	);
+	let modesens_login = document.getElementById("modesens-login");
+	let modesens_signUp_form = document.querySelector(".modesens-signUp-form");
+	let modesens_signUp_form_button = document.querySelector(
+		".modesens-signUp-form-button"
+	);
 
-  function loginmodesens() {
-    window.location.href = "./modesensLogin.html";
-  }
+	function loginmodesens() {
+		window.location.href = "./modesensLogin.html";
+	}
 
-  function close_page() {
-    window.location.href = "./gotocart.html";
-  }
-  function modesens_signUp(e) {
-    e.preventDefault();
+	function close_page() {
+		window.location.href = "./cart.html";
+	}
+	function modesens_signUp(e) {
+		e.preventDefault();
 
-    let username_modesens = modesens_signUp_form.username_modesens.value;
-    console.log("username_modesens:", username_modesens);
+		let username_modesens = modesens_signUp_form.username_modesens.value;
+		console.log("username_modesens:", username_modesens);
 
-    let email_modesens = modesens_signUp_form.email_modesens.value;
-    console.log("email_modesens:", email_modesens);
+		let email_modesens = modesens_signUp_form.email_modesens.value;
+		console.log("email_modesens:", email_modesens);
 
-    let password_modesens = modesens_signUp_form.password_modesens.value;
-    console.log("password_modesens:", password_modesens);
+		let password_modesens = modesens_signUp_form.password_modesens.value;
+		console.log("password_modesens:", password_modesens);
 
-    if (
-      username_modesens == "" ||
-      username_modesens == null ||
-      email_modesens == "" ||
-      email_modesens == null ||
-      password_modesens == "" ||
-      password_modesens == null
-    ) {
-      alert("All details are required");
-    } else {
-      modesens_signUp_data(
-        username_modesens,
-        email_modesens,
-        password_modesens
-      );
-    }
-  }
+		if (
+			username_modesens == "" ||
+			username_modesens == null ||
+			email_modesens == "" ||
+			email_modesens == null ||
+			password_modesens == "" ||
+			password_modesens == null
+		) {
+			alert("All details are required");
+		} else {
+			modesens_signUp_data(
+				username_modesens,
+				email_modesens,
+				password_modesens
+			);
+		}
+	}
 
-  function modesens_signUp_data(
-    username_modesens,
-    email_modesens,
-    password_modesens
-  ) {
-    let modesens_signUp_details = {
-      username_modesens,
-      email_modesens,
-      password_modesens,
-    };
+	function modesens_signUp_data(
+		username_modesens,
+		email_modesens,
+		password_modesens
+	) {
+		let modesens_signUp_details = {
+			username_modesens,
+			email_modesens,
+			password_modesens,
+		};
 
-    let modesensSignUpData;
-    let nameOrEmail = false;
+		let modesensSignUpData;
+		let nameOrEmail = false;
 
-    modesensSignUpData = localStorage.getItem("modesensSignUpData");
+		modesensSignUpData = localStorage.getItem("modesensSignUpData");
 
-    if (modesensSignUpData == null) {
-      modesensSignUpData = [];
-    } else {
-      modesensSignUpData = JSON.parse(
-        localStorage.getItem("modesensSignUpData")
-      );
-      modesensSignUpData.forEach(function (el) {
-        if (
-          modesens_signUp_details.username_modesens == el.username_modesens ||
-          modesens_signUp_details.email_modesens == el.email_modesens
-        ) {
-          nameOrEmail = true;
-          alert("User Already Exists! Try dfferent Username or Email ID");
-        }
-      });
-    }
+		if (modesensSignUpData == null) {
+			modesensSignUpData = [];
+		} else {
+			modesensSignUpData = JSON.parse(
+				localStorage.getItem("modesensSignUpData")
+			);
+			modesensSignUpData.forEach(function (el) {
+				if (
+					modesens_signUp_details.username_modesens == el.username_modesens ||
+					modesens_signUp_details.email_modesens == el.email_modesens
+				) {
+					nameOrEmail = true;
+					alert("User Already Exists! Try dfferent Username or Email ID");
+				}
+			});
+		}
 
-    if (nameOrEmail == false) {
-      modesensSignUpData.push(modesens_signUp_details);
-      localStorage.setItem(
-        "modesensSignUpData",
-        JSON.stringify(modesensSignUpData)
-      );
-      alert("Sign Up Successful. Login to vist homepage!");
-      loginmodesens();
-    }
-  }
+		if (nameOrEmail == false) {
+			modesensSignUpData.push(modesens_signUp_details);
+			localStorage.setItem(
+				"modesensSignUpData",
+				JSON.stringify(modesensSignUpData)
+			);
+			alert("Sign Up Successful. Login to vist homepage!");
+			loginmodesens();
+		}
+	}
 
-  signUp_close_button.addEventListener("click", close_page);
-  modesens_login.addEventListener("click", loginmodesens);
-  modesens_signUp_form_button.addEventListener("click", modesens_signUp);
+	signUp_close_button.addEventListener("click", close_page);
+	modesens_login.addEventListener("click", loginmodesens);
+	modesens_signUp_form_button.addEventListener("click", modesens_signUp);
 </script>
