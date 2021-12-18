@@ -16,15 +16,50 @@
 				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 					Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 			}
-
 			.header {
 				position: relative;
-				height: 50px;
-				justify-content: space-between;
-				padding: 0.5rem 1rem;
+				height: 60px;
+				justify-content: space-around;
+				margin-left: -10px;
 				box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
 				z-index: 10;
 				background-color: white;
+				font-size: 12px;
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+			.headdiv1 {
+				display: flex;
+				justify-content: space-around;
+				width: 750px;
+				height: 24px;
+				align-items: center;
+				margin-right: 10%;
+			}
+
+			.headdiv1 > div > a {
+				text-decoration: none;
+				color: black;
+				cursor: pointer;
+			}
+
+			.headdiv1 > div > a :hover {
+				text-decoration: none;
+				color: black;
+				cursor: pointer;
+			}
+			.headdiv2 {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				width: 150px;
+				height: 21px;
+				margin-right: 2%;
+			}
+
+			.headdiv2 > div:nth-child(1) > a > img {
+				width: 20px;
+				height: 20px;
 			}
 			.sticky {
 				position: fixed;
@@ -53,7 +88,6 @@
 				align-content: flex-start;
 				transform: translateX(-50%);
 			}
-
 			.banner1 {
 				width: 90%;
 				height: 400px;
@@ -343,64 +377,72 @@
 				margin-top: 20px;
 			}
 
+			.foot2div {
+				height: 150px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.foot2left {
+				width: 250px;
+				height: 42px;
+				margin: auto;
+				margin-inline-start: 10px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				margin-top: 50px;
+			}
 			.foot2t {
 				font-size: 14px;
 				color: #1c1c1c;
 				letter-spacing: 0.5px;
 				font-weight: 400;
 				line-height: 1.5;
-				text-align: left;
-			}
-
-			.foot2div {
-				height: 200px;
-				margin: auto;
-				display: flex;
-				flex-direction: column;
-			}
-
-			.foot2left {
-				width: 180px;
-				height: 42px;
-				border: 1px solid green;
-				margin: auto;
-				margin-inline-start: 10px;
-				display: flex;
-				flex-direction: column;
+				text-align: center;
+				margin-left: 20px;
 			}
 
 			.foot2right {
 				width: 304px;
 				height: 50px;
-				border: 1px solid green;
 				margin: auto;
 				margin-inline-end: 10px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				margin-top: 50px;
 			}
 
 			.footimgleft {
 				width: 31px;
 				height: 41px;
-				margin-left: 10px;
 			}
 
 			.footimgleft > img {
 				width: 100%;
 				height: 100%;
 			}
+			.footminip {
+				width: 30px;
+				height: 30px;
+				margin-right: 35px;
+			}
 
 			.footmini1 {
 				width: 30px;
 				height: 30px;
-				display: inline-block;
-				margin-left: 10px;
+				margin-right: 20px;
 			}
 
 			.footmini {
 				width: 50px;
 				height: 50px;
-				display: inline-block;
 				margin: auto;
-				margin-left: 10px;
 			}
 
 			.footmini1 > img {
@@ -412,9 +454,9 @@
 				width: 100%;
 				height: 100%;
 			}
-
-			.footimgt {
-				display: inline-block;
+			.footminip > img {
+				width: 100%;
+				height: 100%;
 			}
 		</style>
 	</head>
@@ -429,28 +471,40 @@
 						alt="logo"
 				/></a>
 			</div>
-			<div>WOMEN</div>
-			<div>MEN</div>
-			<div>KIDS</div>
-			<div>HOME</div>
-			<div>BEAUTY</div>
-			<div>OFFERS</div>
-			<div>DESIGNERS</div>
-			<div>COMMUNITY</div>
-			<div>WHY MODESENS</div>
-			<div>
-				<img
-					src="https://cdn.modesens.com/static/img/20200612account_b2.svg"
-					alt=""
-				/>
+			<div class="headdiv1">
+				<div><a href="./product.html">WOMEN</a></div>
+				<div><a href="./product.html">MEN</a></div>
+				<div><a href="./product.html">KIDS</a></div>
+				<div><a href="./product.html">HOME</a></div>
+				<div><a href="./product.html">BEAUTY</a></div>
+				<div><a href="./product.html">OFFERS</a></div>
+				<div><a href="./product.html">DESIGNERS</a></div>
+				<div><a href="./product.html">COMMUNITY</a></div>
+				<div><a href="./product.html">WHY MODESENS</a></div>
 			</div>
-			<div>
-				<img
-					class="alignc"
-					src="	https://modesens.com/static/img/20200612search_img1.svg"
-					alt=""
-				/>
-				SEARCH
+			<div class="headdiv2">
+				<div>
+					<a href="./cart.html">
+						<img
+							src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+							alt=""
+					/></a>
+				</div>
+				<div>
+					<img
+						src="https://cdn.modesens.com/static/img/20200612account_b2.svg"
+						alt=""
+					/>
+				</div>
+
+				<div>
+					<img
+						class="alignc"
+						src="	https://modesens.com/static/img/20200612search_img1.svg"
+						alt=""
+					/>
+					SEARCH
+				</div>
 			</div>
 		</header>
 		<div class="banner1 marg">
@@ -742,49 +796,39 @@
 			</div>
 		</div>
 		<div class="foot2div">
-			<div>
-				<div class="foot2left">
-					<div class="footimgleft">
-						<img
-							src="https://cdn.modesens.com/static/img/20180905footer_logo.svg"
-							alt=""
-						/>
-					</div>
-					<div class="footimgt">© 2021, ModeSens Inc</div>
+			<div class="foot2left">
+				<div class="footimgleft">
+					<img
+						src="https://cdn.modesens.com/static/img/20180905footer_logo.svg"
+						alt=""
+					/>
 				</div>
-				<div class="foot2right">
-					<div class="footmini1">
-						<img
-							src="https://cdn.modesens.com/static/img/20181008footer-pit.svg"
-							alt=""
-						/>
-					</div>
-					<div class="footmini1">
-						<img
-							src="https://cdn.modesens.com/static/img/20181008footer-tt.svg"
-							alt=""
-						/>
-					</div>
-					<div class="footmini">
-						<img
-							src="https://cdn.modesens.com/static/img/footer-p.svg"
-							alt=""
-						/>
-					</div>
-					<div class="footmini">
-						<img
-							src="	https://cdn.modesens.com/static/img/footer-fb.svg"
-							alt=""
-						/>
-					</div>
-					<div class="footmini">
-						<img
-							src="	https://cdn.modesens.com/static/img/footer-wx.svg"
-							alt=""
-						/>
-					</div>
+				<div class="foot2t">© 2021, ModeSens Inc</div>
+			</div>
+			<div class="foot2right">
+				<div class="footminip">
+					<img
+						src="https://cdn.modesens.com/static/img/20181008footer-pit.svg"
+						alt=""
+					/>
+				</div>
+				<div class="footmini1">
+					<img
+						src="https://cdn.modesens.com/static/img/20181008footer-tt.svg"
+						alt=""
+					/>
+				</div>
+				<div class="footmini">
+					<img src="https://cdn.modesens.com/static/img/footer-p.svg" alt="" />
+				</div>
+				<div class="footmini">
+					<img src="	https://cdn.modesens.com/static/img/footer-fb.svg" alt="" />
+				</div>
+				<div class="footmini">
+					<img src="	https://cdn.modesens.com/static/img/footer-wx.svg" alt="" />
 				</div>
 			</div>
 		</div>
+		<hr />
 	</body>
 </html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        position: relative;
+        background: url(https://cdn.cliqueinc.com/posts/284828/best-nordstrom-shopping-over-60-284828-1579002087434-main.700x0c.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      .modalmodesens {
+        box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 45.6%;
+        height: 550px;
+        background: #fff;
+        border-radius: 4px;
+        display: flex;
+        overflow: hidden;
+        max-height: 550px;
+        max-width: 700px;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(0.1px);
+        z-index: 5;
+      }
+
+      .login-left-section {
+        width: 44.57%;
+        height: 100%;
+        display: flex;
+        background: url(https://i.pinimg.com/564x/e7/1a/ad/e71aadd4e16211f95dbb5bfec217e1ac.jpg);
+
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .login-left-section-content {
+        padding: 8.2% 4.5% 11.3% 10%;
+        height: 89%;
+        width: 85.25%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login-left-section-content > h4 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 40px;
+        color: #fff;
+        margin: 0 0 8%;
+        height: 38px;
+      }
+
+      .login-left-section-features {
+        display: flex;
+        position: relative;
+      }
+
+      .login-left-section-features > img {
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        top: 2px;
+        left: 0;
+      }
+
+      .login-left-section-features > div {
+        margin-left: 28px;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.16px;
+        line-height: 21px;
+        color: #fff;
+        margin-bottom: 18px;
+      }
+
+      .login-right-section {
+        width: 55.428%;
+        height: 100%;
+      }
+
+      .login-right-section-content {
+        left: 0;
+        padding-left: 8.3%;
+        padding-right: 8%;
+        padding-top: 6.7%;
+        height: 92.7%;
+      }
+
+      .login-right-section-close-button {
+        border: 0;
+        top: 17px;
+        right: 16px;
+        z-index: 99;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        font-weight: 100;
+        cursor: pointer;
+      }
+
+      .login-signUp-list {
+        border-bottom: 3px solid #f4f4f4;
+        list-style: none;
+        margin: 0 0 30px;
+        padding: 0;
+      }
+
+      .login-signUp-tab {
+        display: inline-block;
+        width: inherit;
+        font-size: 16px;
+        color: #666670;
+        cursor: pointer;
+        padding: 10px 29px;
+        line-height: 21px;
+        position: relative;
+        letter-spacing: 0.32px;
+        font-weight: 500;
+      }
+
+      .login-signUp-list > li:nth-child(1) {
+        border-bottom: 4px solid black;
+        color: black !important;
+        border-radius: 1px;
+      }
+      .login-section {
+        display: flex;
+        flex-direction: column;
+        /* height: 340px; */
+      }
+
+      .modesens-login-form {
+        display: block;
+        margin-top: 0em;
+      }
+      .login-section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .modesens-login-form-label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #393939;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .modesens-login-form-input {
+        border: 1px solid #c6c6c6;
+        border-radius: 4px;
+        height: 40px;
+        padding: 0 0 0 12px;
+        margin-top: 1%;
+        letter-spacing: 0.16px;
+        margin-bottom: 2%;
+        width: 97%;
+      }
+
+      .modesens-login-form-input:focus {
+        border: black solid 2px;
+      }
+
+      .modesens-login-form-button {
+        background-color: black;
+        border-radius: 4px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        line-height: 30px;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: none;
+        border: 0;
+        width: 100%;
+        margin-top: 2%;
+      }
+
+      .login-section-form-or {
+        margin: 32.8px 0 16px;
+        position: relative;
+      }
+
+      .login-section-form-or > span {
+        font-weight: 400;
+        color: #161616;
+        font-size: 14px;
+        line-height: 19px;
+        padding: 0 14px;
+        background-color: #fff;
+        position: absolute;
+        z-index: 2;
+        bottom: 5px;
+        left: 43%;
+      }
+
+      .login-section-form-or > div {
+        position: absolute;
+        border-bottom: 1px solid #cdcfd2;
+        width: 100%;
+        height: 2px;
+        bottom: 9px;
+      }
+
+      .login-integration {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .login-icon-container {
+        display: inline-block;
+        border-radius: 4px !important;
+        width: 47%;
+        text-align: center;
+        border-radius: 4px;
+        padding: 12px 0;
+        border: 1px solid #e0e0e0;
+        cursor: pointer;
+      }
+
+      .login-icon-container > img {
+        vertical-align: middle;
+        width: 16px;
+      }
+
+      .login-icon-text {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        color: #525252;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+
+      .login-section-footer {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        transform: translateX(-8%);
+        width: 55%;
+      }
+
+      .login-section-footer > p {
+        padding-top: 14px;
+        border-top: 1px solid #c6c6c6;
+        font-size: 12px;
+        text-align: center;
+        color: #666;
+        line-height: 16px;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        content: "";
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="modalmodesens">
+      <div class="login-left-section"></div>
+      <div class="login-right-section">
+        <div class="login-right-section-content">
+          <div>
+            <img
+              src="https://img2.hkrtcdn.com/react/static/media/common/login/Closs.svg"
+              alt="close button"
+              class="login-right-section-close-button"
+            />
+            <ul class="login-signUp-list">
+              <li class="login-signUp-tab login-tab" id="modesens-login">
+                Login
+              </li>
+              <li class="login-signUp-tab signUp-tab" id="modesens-signUp">
+                Signup
+              </li>
+            </ul>
+            <div class="login-section">
+              <form class="modesens-login-form">
+                <label for="email_modesens" class="modesens-login-form-label"
+                  >Email</label
+                >
+                <input
+                  class="modesens-login-form-input"
+                  type="text"
+                  name="email_modesens"
+                  id="email_modesens"
+                />
+
+                <label for="password_modesens" class="modesens-login-form-label"
+                  >Password</label
+                >
+                <input
+                  class="modesens-login-form-input"
+                  type="password"
+                  name="password_modesens"
+                  id="password_modesens"
+                />
+
+                <button class="modesens-login-form-button">Login</button>
+              </form>
+
+              <div class="login-section-form-or">
+                <span>or</span>
+                <div></div>
+              </div>
+
+              <div class="login-integration">
+                <div class="login-icon-container">
+                  <img
+                    src="https://img2.hkrtcdn.com/react/static/media/common/Logo%20Google.svg"
+                    alt="google"
+                  />
+                  <span class="login-icon-text">Google</span>
+                </div>
+                <div class="login-icon-container">
+                  <img
+                    src="https://img10.hkrtcdn.com/react/static/media/common/F_icon.svg"
+                    alt="facebook"
+                  />
+                  <span class="login-icon-text">Facebook</span>
+                </div>
+              </div>
+
+              <div class="login-section-footer">
+                <p>
+                  By signing up you agree to our
+                  <a
+                    href="https://www.modesens.com/hk/TerfvfdgvfbgfmsConditions.action9"
+                    >Terms and Condition</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+  </body>
+</html>
+<script>
+  let modesens_signUp = document.getElementById("modesens-signUp");
+  let login_close_button = document.querySelector(
+    ".login-right-section-close-button"
+  );
+  let modesens_login_form = document.querySelector(".modesens-login-form");
+  let modesens_login_form_button = document.querySelector(
+    ".modesens-login-form-button"
+  );
+
+  function signUpmodesens() {
+    window.location.href = "./modesensSignUp.html";
+  }
+
+  function close_page() {
+    window.location.href = "./gotocart.html";
+  }
+
+  function modesens_login(e) {
+    e.preventDefault();
+    let loginAccepted = false;
+    let modesens_login_details = JSON.parse(
+      localStorage.getItem("modesensSignUpData")
+    );
+
+    let email_modesens = modesens_login_form.email_modesens.value;
+    console.log("email_modesens:", email_modesens);
+
+    let password_modesens = modesens_login_form.password_modesens.value;
+    console.log("password_modesens:", password_modesens);
+
+    for (let i = 0; i < modesens_login_details.length; i++) {
+      if (
+        email_modesens == modesens_login_details[i].email_modesens &&
+        password_modesens == modesens_login_details[i].password_modesens
+      ) {
+        loginAccepted = true;
+        alert("Login Successful");
+        console.log("successful");
+
+        window.location.href = "./modesensAddressPage.html";
+        break;
+      }
+    }
+
+    if (loginAccepted == false) {
+      alert("Wrong Credentials");
+    }
+  }
+
+  login_close_button.addEventListener("click", close_page);
+  modesens_login_form_button.addEventListener("click", modesens_login);
+  modesens_signUp.addEventListener("click", signUpmodesens);
+</script>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+					Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+			}
+
+			body {
+				margin: 0;
+				padding: 0;
+				height: 100vh;
+				position: relative;
+			}
+
+			.overlay {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(62, 61, 61, 0.56);
+				backdrop-filter: blur(0.09px);
+				z-index: 5;
+			}
+
+			.address-modal {
+				height: auto;
+				max-height: 90%;
+				overflow: auto;
+				max-width: 95%;
+				transform: translate(-50%, -50%) !important;
+				display: block;
+				z-index: 20;
+				box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 29.2%;
+				/* height: 71.23vh; */
+				background: #fff;
+				border-radius: 4px;
+				overflow: hidden;
+				min-width: 350px;
+			}
+
+			.address-head {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				position: relative;
+				margin: 0;
+				border-bottom: 1px solid #d6d6d6;
+				padding: 14px 26px 20px 23px;
+			}
+
+			.address-head > h2 {
+				margin: 0;
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 24px;
+				text-transform: capitalize;
+				color: #000;
+			}
+
+			.form-container {
+				float: left;
+				width: 100%;
+				padding: 1.8% 0;
+				height: 98%;
+			}
+
+			.address-form {
+				font-size: 14px;
+				color: #212121;
+				outline: none;
+				box-sizing: border-box;
+				width: 100%;
+				height: 100%;
+			}
+
+			.fieldset-container {
+				padding: 2.7% 6.7%;
+				height: 100%;
+				width: 86.6%;
+			}
+
+			.address-form-row {
+				width: 100%;
+				margin-bottom: 20px;
+				float: left;
+			}
+
+			.address-full-row {
+				width: 100%;
+				float: left;
+			}
+
+			.address-half-row {
+				width: 45%;
+				float: left;
+				padding-right: 5%;
+			}
+
+			.address-fieldset {
+				padding: 0;
+				border: 0;
+				width: 100%;
+				position: relative;
+			}
+
+			.address-input-modesens {
+				display: block;
+				width: 100%;
+
+				outline: none !important;
+				border: none;
+				border-bottom: 1px solid #e6e7e7;
+				box-shadow: none !important;
+				outline: none;
+				background: #fff;
+				color: #000;
+				font-size: 13px;
+				line-height: 19px;
+				padding: 20px 0 4px;
+			}
+
+			.address-form-row input:focus + .address-label {
+				border-color: #e6e7e7;
+				border-width: medium medium 2px;
+				top: -4px;
+				left: 2px;
+			}
+
+			.address-form-row input:valid ~ label {
+				top: -4px;
+				left: 2px;
+				border-color: #e6e7e7;
+			}
+
+			.address-label {
+				color: rgba(0, 0, 0, 0.6);
+				position: absolute;
+				border-width: medium medium 1px;
+				pointer-events: none;
+				top: 18px;
+				left: -2px;
+				transition: all 0.2s ease;
+			}
+
+			.address-mandatory-details {
+				width: 8px;
+				height: 8px;
+				padding: 0 13px 0 0;
+				color: red;
+				font-weight: 700;
+			}
+
+			.address-button {
+				cursor: pointer;
+				width: 100%;
+				border-radius: 8px;
+				padding: 0 8px;
+				font-weight: 500;
+				background: black;
+				border: 1px solid black;
+				font-size: 17px;
+				color: #fff;
+				line-height: 50px;
+			}
+
+			@media (max-width: 650px) {
+				.address-modal {
+					height: auto;
+					max-height: 90%;
+					overflow: auto;
+					width: 55%;
+				}
+			}
+
+			@media (min-width: 350px) and (max-width: 649px) {
+				.address-modal {
+					height: auto;
+					max-height: 90%;
+					overflow: auto;
+					width: 95%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="overlay"></div>
+
+		<div class="address-modal">
+			<div class="address-head">
+				<h2>Add new address</h2>
+				<img
+					src="https://img2.hkrtcdn.com/react/static/media/common/login/Closs.svg"
+					alt="close"
+				/>
+			</div>
+			<div class="form-container">
+				<form class="address-form">
+					<div class="fieldset-container">
+						<div class="address-form-row">
+							<div class="address-full-row">
+								<fieldset class="address-fieldset">
+									<input
+										type="text"
+										name="address-name"
+										id="address_name"
+										required
+										class="address-input-modesens"
+										autocomplete="off"
+									/>
+									<label class="address-label"
+										><span class="content-text">Name</span>
+										<span class="address-mandatory-details">*</span>
+									</label>
+								</fieldset>
+							</div>
+						</div>
+						<div class="address-form-row">
+							<div class="address-half-row">
+								<fieldset class="address-fieldset">
+									<input
+										type="number"
+										name="mobile-no."
+										id="mobile_num"
+										class="address-input-modesens"
+										autocomplete="off"
+										required
+									/>
+									<label class="address-label"
+										><span class="content-text">Mobile No.</span>
+										<span class="address-mandatory-details">*</span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="address-half-row">
+								<fieldset class="address-fieldset">
+									<input
+										type="number"
+										name="alternate-no."
+										id="alternate_num"
+										class="address-input-modesens"
+										required
+										autocomplete="off"
+									/>
+									<label class="address-label"
+										><span class="content-text">Alternate No.</span>
+									</label>
+								</fieldset>
+							</div>
+						</div>
+						<div class="address-form-row">
+							<div class="address-full-row">
+								<fieldset class="address-fieldset">
+									<input
+										type="text"
+										name="address"
+										id="delivery_address"
+										class="address-input-modesens"
+										autocomplete="off"
+										required
+									/>
+									<label class="address-label"
+										><span class="content-text">Address</span>
+										<span class="address-mandatory-details">*</span>
+									</label>
+								</fieldset>
+							</div>
+						</div>
+						<div class="address-form-row">
+							<div class="address-half-row">
+								<fieldset class="address-fieldset">
+									<input
+										type="text"
+										name="landmark"
+										id="landmark"
+										class="address-input-modesens"
+										autocomplete="off"
+										required
+									/>
+									<label class="address-label"
+										><span class="content-text">Landmark</span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="address-half-row">
+								<fieldset class="address-fieldset">
+									<input
+										type="text"
+										name="pincode"
+										id="pincode"
+										class="address-input-modesens"
+										autocomplete="off"
+										required
+									/>
+									<label class="address-label"
+										><span class="content-text">Pincode</span
+										><span class="address-mandatory-details">*</span>
+									</label>
+								</fieldset>
+							</div>
+						</div>
+						<div class="address-form-row">
+							<div class="address-half-row">
+								<fieldset class="address-fieldset">
+									<input
+										type="text"
+										name="state"
+										id="state"
+										class="address-input-modesens"
+										autocomplete="off"
+										required
+									/>
+									<label class="address-label"
+										><span class="content-text">State</span>
+										<span class="address-mandatory-details">*</span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="address-half-row">
+								<fieldset class="address-fieldset">
+									<input
+										type="text"
+										name="city"
+										id="city"
+										class="address-input-modesens"
+										autocomplete="off"
+										required
+									/>
+									<label class="address-label"
+										><span class="content-text">City</span>
+										<span class="address-mandatory-details">*</span>
+									</label>
+								</fieldset>
+							</div>
+						</div>
+
+						<button class="address-button">Save & Deliver</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	let address_form = document.querySelector(".address-form");
+
+	let address_button = document.querySelector(".address-button");
+	address_button.addEventListener("click", modesens_delivery_address);
+
+	function modesens_delivery_address(e) {
+		e.preventDefault();
+		let modesens_name = address_form.address_name.value;
+		console.log("modesens_name:", modesens_name);
+
+		let modesens_mobile_num = address_form.mobile_num.value;
+		console.log("modesens_mobile_num:", modesens_mobile_num);
+
+		let modesens_alternate_num = address_form.alternate_num.value;
+		console.log("modesens_alternate_num:", modesens_alternate_num);
+
+		let modesens_delivery_address = address_form.delivery_address.value;
+		console.log("modesens_delivery_address:", modesens_delivery_address);
+
+		let modesens_landmark = address_form.landmark.value;
+		console.log("modesens_landmark:", modesens_landmark);
+
+		let modesens_pincode = address_form.pincode.value;
+		console.log("modesens_pincode:", modesens_pincode);
+
+		let modesens_state = address_form.state.value;
+		console.log("modesens_state:", modesens_state);
+
+		let modesens_city = address_form.city.value;
+		console.log("modesens_city:", modesens_city);
+
+		if (
+			modesens_name == "" ||
+			modesens_name == null ||
+			modesens_mobile_num == "" ||
+			modesens_mobile_num == null ||
+			modesens_mobile_num.length != 10 ||
+			modesens_delivery_address == "" ||
+			modesens_delivery_address == null ||
+			modesens_pincode == "" ||
+			modesens_pincode == null ||
+			modesens_state == "" ||
+			modesens_state == null ||
+			modesens_pincode.length != 6 ||
+			modesens_city == "" ||
+			modesens_city == null
+		) {
+			alert("All Details are Required");
+		} else {
+			modesens_add_delivery_address(
+				modesens_name,
+				modesens_mobile_num,
+				modesens_alternate_num,
+				modesens_delivery_address,
+				modesens_landmark,
+				modesens_pincode,
+				modesens_state,
+				modesens_city
+			);
+		}
+	}
+
+	function modesens_add_delivery_address(
+		modesens_name,
+		modesens_mobile_num,
+		modesens_alternate_num,
+		modesens_delivery_address,
+		modesens_landmark,
+		modesens_pincode,
+		modesens_state,
+		modesens_city
+	) {
+		let modesens_address_details = {
+			modesens_name,
+			modesens_mobile_num,
+			modesens_alternate_num,
+			modesens_delivery_address,
+			modesens_landmark,
+			modesens_pincode,
+			modesens_state,
+			modesens_city,
+		};
+
+		let modesens_address_data = localStorage.getItem("modesens_address_data");
+
+		if (modesens_address_data == null) {
+			modesens_address_data = [];
+		} else {
+			modesens_address_data = JSON.parse(
+				localStorage.getItem("modesens_address_data")
+			);
+		}
+
+		modesens_address_data.push(modesens_address_details);
+		localStorage.setItem(
+			"modesens_address_data",
+			JSON.stringify(modesens_address_data)
+		);
+		alert("Added");
+	}
+</script>
