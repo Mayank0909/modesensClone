@@ -11,457 +11,31 @@
 		/>
 		<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
 		<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
-		<style>
-			* {
-				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-					Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-			}
-			.header {
-				position: relative;
-				height: 60px;
-				justify-content: space-around;
-				margin-left: -10px;
-				box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
-				z-index: 10;
-				background-color: white;
-				font-size: 12px;
-				padding-right: 10px;
-				padding-left: 10px;
-			}
-			.headdiv1 {
-				display: flex;
-				justify-content: space-around;
-				width: 750px;
-				height: 24px;
-				align-items: center;
-				margin-right: 10%;
-			}
-
-			.headdiv1 > div > a {
-				text-decoration: none;
-				color: black;
-				cursor: pointer;
-			}
-
-			.headdiv1 > div > a :hover {
-				text-decoration: none;
-				color: black;
-				cursor: pointer;
-			}
-			.headdiv2 {
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-				width: 150px;
-				height: 21px;
-				margin-right: 2%;
-			}
-
-			.headdiv2 > div:nth-child(1) > a > img {
-				width: 20px;
-				height: 20px;
-			}
-			.sticky {
-				position: fixed;
-				top: 0;
-				width: 100%;
-			}
-			.textc {
-				text-align: center !important;
-			}
-
-			.marg {
-				margin: auto;
-			}
-
-			.alignc {
-				align-items: center;
-			}
-
-			.dflex {
-				display: flex;
-				align-items: center;
-			}
-
-			.nav-logo {
-				position: absolute;
-				align-content: flex-start;
-				transform: translateX(-50%);
-			}
-			.banner1 {
-				width: 90%;
-				height: 400px;
-			}
-
-			.banner2 {
-				width: 90%;
-				height: 285px;
-				margin-top: 40px;
-				margin-bottom: 40px;
-			}
-
-			.banner1 > img {
-				max-width: 100%;
-				max-height: 100%;
-			}
-
-			.banner2 > img {
-				max-width: 100%;
-				max-height: 100%;
-			}
-
-			.jcc {
-				justify-content: center;
-			}
-
-			.center {
-				align-items: center;
-				justify-content: center;
-				margin: auto;
-			}
-
-			.ma {
-				margin: auto;
-			}
-
-			.hf {
-				height: 100% !important;
-			}
-
-			.wf {
-				width: 100% !important;
-			}
-
-			.selec {
-				font-weight: 700;
-				font-size: 25px;
-			}
-
-			.t2 {
-				color: #6c757d;
-				font-weight: 300px !important;
-				font-size: 20px;
-			}
-
-			.secdiv {
-				height: 120px;
-				width: 100%;
-				margin: auto;
-				text-align: center;
-			}
-
-			.gussi {
-				height: 250px;
-				width: 100%;
-				margin: auto;
-				text-align: center;
-			}
-
-			.box {
-				display: grid;
-				grid-template-columns: repeat(6, 1fr);
-				grid-template-rows: 50%;
-				margin: auto;
-				justify-content: center;
-			}
-
-			.box > div {
-				width: 60%;
-				height: 80%;
-				margin: auto;
-				margin-bottom: 20px;
-			}
-
-			.sale {
-				height: 700px;
-				width: 90%;
-				margin: auto;
-			}
-
-			.t3 {
-				text-align: right;
-				font-size: 15px;
-				font-weight: 500;
-			}
-
-			.saled {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				margin: auto;
-				justify-content: center;
-				grid-gap: 3%;
-			}
-
-			.saleimg {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-
-			.saleimg > img {
-				width: 100%;
-				height: 480px;
-			}
-
-			.salet1 {
-				font-size: 20px;
-				font-weight: 700px;
-			}
-
-			.salet2 {
-				font-weight: 500px;
-			}
-
-			.salebut {
-				border: 1px solid #8e8e8e;
-				background-color: transparent;
-				color: black;
-				padding: 10px 15px;
-				font-size: medium;
-			}
-
-			.salebut:hover {
-				background-color: black;
-				color: white;
-			}
-
-			.trenddiv {
-				height: 400px;
-				width: 90%;
-				margin-bottom: 100px;
-				line-height: 15px;
-			}
-
-			.trend {
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				grid-gap: 1%;
-				justify-content: center;
-				margin: auto;
-			}
-
-			.trend > div {
-				border: 1px solid #f5f5f5;
-				padding: 10px;
-			}
-
-			.trend > div > div > img {
-				height: 100%;
-				width: 220px;
-			}
-
-			.commudiv {
-				height: 350px;
-				width: 90%;
-				line-height: 15px;
-				margin-top: 50px;
-			}
-
-			.commu {
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				grid-template-rows: 285px;
-				grid-gap: 1%;
-				justify-content: center;
-				margin: auto;
-			}
-
-			.commu > div {
-				border: 1px solid #f5f5f5;
-				padding: 10px;
-			}
-
-			.commu > div > div > img {
-				max-height: 268px;
-				max-width: 270px;
-			}
-
-			.foot1 {
-				margin: 0;
-				font-size: 15.5px;
-				color: #1c1c1c;
-				letter-spacing: 0.5px;
-				font-weight: 400;
-				text-align: left;
-				background-color: #fff;
-			}
-
-			.footdiv {
-				height: 286px;
-				width: 95%;
-				border-top: 1px solid black;
-				border-bottom: 1px solid black;
-				margin: auto;
-				margin-top: 50px;
-			}
-
-			.foot {
-				display: grid;
-				grid-template-columns: repeat(5, 1fr);
-				grid-template-rows: 285px;
-				grid-gap: 1%;
-				justify-content: center;
-				margin: auto;
-			}
-
-			.footdiv > div > div > h4 {
-				margin-top: 60px;
-			}
-
-			.footdiv > div > div > p {
-				color: #7f7f7f;
-				font-size: 14px;
-				line-height: 10px;
-			}
-
-			.footdiv > div > div > p:hover {
-				text-decoration: underline;
-			}
-
-			.iosdiv {
-				display: inline-block;
-				width: 185px;
-				height: 48px;
-			}
-
-			.ios {
-				width: 21px;
-				height: 31px;
-				display: inline-block;
-			}
-
-			.ios > img {
-				height: 100%;
-				width: 100%;
-			}
-
-			.iost {
-				width: 108px;
-				height: 17px;
-				margin-left: 10px;
-				font-size: 12px;
-				line-height: 16px;
-				display: inline-block;
-				color: #7f7f7f;
-			}
-
-			.ios2div {
-				display: inline-block;
-				width: 185px;
-				height: 17px;
-				margin-top: 15px;
-			}
-
-			.ios2 {
-				width: 21px;
-				height: 17px;
-				display: inline-block;
-			}
-
-			.ios2 > img {
-				height: 100%;
-				width: 100%;
-			}
-
-			.iost2 {
-				width: 108px;
-				height: 48px;
-				margin-left: 10px;
-				font-size: 12px;
-				line-height: 16px;
-				display: inline-block;
-				color: #7f7f7f;
-			}
-
-			.submarg {
-				margin-top: 20px;
-			}
-
-			.foot2div {
-				height: 150px;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				align-items: center;
-			}
-
-			.foot2left {
-				width: 250px;
-				height: 42px;
-				margin: auto;
-				margin-inline-start: 10px;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-evenly;
-				align-items: center;
-				margin-top: 50px;
-			}
-			.foot2t {
-				font-size: 14px;
-				color: #1c1c1c;
-				letter-spacing: 0.5px;
-				font-weight: 400;
-				line-height: 1.5;
-				text-align: center;
-				margin-left: 20px;
-			}
-
-			.foot2right {
-				width: 304px;
-				height: 50px;
-				margin: auto;
-				margin-inline-end: 10px;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-evenly;
-				align-items: center;
-				margin-top: 50px;
-			}
-
-			.footimgleft {
-				width: 31px;
-				height: 41px;
-			}
-
-			.footimgleft > img {
-				width: 100%;
-				height: 100%;
-			}
-			.footminip {
-				width: 30px;
-				height: 30px;
-				margin-right: 35px;
-			}
-
-			.footmini1 {
-				width: 30px;
-				height: 30px;
-				margin-right: 20px;
-			}
-
-			.footmini {
-				width: 50px;
-				height: 50px;
-				margin: auto;
-			}
-
-			.footmini1 > img {
-				width: 100%;
-				height: 100%;
-			}
-
-			.footmini > img {
-				width: 100%;
-				height: 100%;
-			}
-			.footminip > img {
-				width: 100%;
-				height: 100%;
-			}
-		</style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
 	</head>
 
 	<body>
+		  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
 		<header class="header dflex sticky">
 			<div>
 				<a class="navlogo" href="/"
@@ -472,7 +46,7 @@
 				/></a>
 			</div>
 			<div class="headdiv1">
-				<div><a href="./product.html">WOMEN</a></div>
+				<div><a href="./womenproducts.html">WOMEN</a></div>
 				<div><a href="./product.html">MEN</a></div>
 				<div><a href="./product.html">KIDS</a></div>
 				<div><a href="./product.html">HOME</a></div>
@@ -491,27 +65,64 @@
 					/></a>
 				</div>
 				<div>
-					<img
-						src="https://cdn.modesens.com/static/img/20200612account_b2.svg"
-						alt=""
-					/>
+					<a href="./modesensSignUp.html">
+						<img
+							src="https://cdn.modesens.com/static/img/20200612account_b2.svg"
+							alt=""
+						/>
+					</a>
 				</div>
 
 				<div>
-					<img
-						class="alignc"
-						src="	https://modesens.com/static/img/20200612search_img1.svg"
-						alt=""
-					/>
-					SEARCH
+					<a href="./product.html">
+						<img
+							class="alignc"
+							src="	https://modesens.com/static/img/20200612search_img1.svg"
+							alt=""
+						/>
+						SEARCH
+					</a>
 				</div>
 			</div>
 		</header>
+		<br />
+		<br />
+		<br />
 		<div class="banner1 marg">
-			<img
-				src="https://modesens.com/banner/10169/getimg/?img=%2Fbanner%2F20211123Holiday%2BGift%2BGuide%2BBlog-1140x400-EN.jpg"
-			/>
+			<div class="slide-container">
+			<div class="slide">
+				<img
+					src="https://modesens.com/banner/14399/getimg/?img=%2Fbanner%2F20221202-modesens-Holiday-1140x400-EN_1670225155.jpg"
+					alt=""
+				/>
+				<div class="caption">1</div>
+			</div>
+			<div class="slide">
+				<img
+					src="https://modesens.com/banner/14371/getimg/?img=%2Fbanner%2F20221204-modesens-Alpha-1140x400-EN.jpg"
+					alt=""
+				/>
+				<div class="caption">2</div>
+			</div>
+			<div class="slide">
+				<img
+					src="https://modesens.com/banner/14424/getimg/?img=%2Fbanner%2F20221205-modesens-SSENSE-1140x400-M-EN_1670304240.jpg"
+					alt=""
+				/>
+				<div class="caption">3</div>
+			</div>
+			<div class="slide">
+				<img
+					src="https://modesens.com/banner/14238/getimg/?img=%2Fbanner%2F20221123-modesens-LJ-holiday-1140x400_1669184089.jpg"
+					alt=""
+				/>
+				<div class="caption">4</div>
+			</div>
+            <span class="arrow prev" onclick= show(-1)> &#10094 </span>
+            <span class="arrow next" onclick= show(1) > &#10095 </span>
 		</div>
+		</div>
+		<br>
 		<div class="banner2 marg">
 			<img
 				src="https://modesens.com/banner/10349/getimg/?img=%2Fbanner%2F20211209Holiday-Page-modesens-Web-EN.jpg"
@@ -624,7 +235,9 @@
 						<p class="salet1">New To Sale</p>
 						<p class="salet2">Holiday Must Haves</p>
 					</div>
-					<button class="salebut">SHOP NOW</button>
+					<a href="./product.html">
+						<button class="salebut">SHOP NOW</button>
+					</a>
 				</div>
 				<div class="textc">
 					<div class="saleimg">
@@ -637,7 +250,9 @@
 						<p class="salet1">Get yourself A Little Something...</p>
 						<p class="salet2">Up To 60% Off At SHOPBOP</p>
 					</div>
-					<button class="salebut">SHOP NOW</button>
+					<a href="./product.html">
+						<button class="salebut">SHOP NOW</button>
+					</a>
 				</div>
 				<div class="textc">
 					<div class="saleimg">
@@ -650,7 +265,9 @@
 						<p class="salet1">FW21 Sale At CETTIRE</p>
 						<p class="salet2">Up To 50% Off</p>
 					</div>
-					<button class="salebut">SHOP NOW</button>
+					<a href="./product.html">
+						<button class="salebut">SHOP NOW</button>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -703,7 +320,7 @@
 			</div>
 		</div>
 		<div class="dflex center">
-			<button class="salebut">SHOP NOW</button>
+			<a href="./product.html"><button class="salebut">SHOP NOW</button></a>
 		</div>
 
 		<div class="commudiv ma jcc textc">
@@ -732,7 +349,7 @@
 			</div>
 		</div>
 		<div class="dflex center">
-			<button class="salebut">VIEW ALL</button>
+			<a href="./product.html"><button class="salebut">VIEW ALL</button></a>
 		</div>
 
 		<div class="footdiv">
@@ -829,6 +446,8 @@
 				</div>
 			</div>
 		</div>
-		<hr />
+		<hr /> 
 	</body>
 </html>
+<script src="imageslider.js"></script>
+

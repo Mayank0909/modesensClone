@@ -106,7 +106,6 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				text-decoration: underline;
 			}
 
 			#container {
@@ -147,6 +146,9 @@
 				margin: 1% auto;
 				padding: 2% 1%;
 			}
+			.cont-items > div:nth-child(4) {
+				align-items: baseline;
+			}
 
 			.total {
 				width: 90%;
@@ -169,6 +171,13 @@
 
 			#t-price {
 				margin-top: 0;
+			}
+			.cartPageButtons {
+				background-color: black;
+				color: white;
+				padding: 0.3rem;
+				margin: 0 0.2rem;
+				border-radius: 5px;
 			}
 		</style>
 	</head>
@@ -199,8 +208,11 @@
 						<img
 							src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
 							alt=""
-					/></a>
+						/>
+					</a>
 				</div>
+				<p id="cartlength"></p>
+
 				<div>
 					<img
 						src="https://cdn.modesens.com/static/img/20200612account_b2.svg"
@@ -223,7 +235,7 @@
 			<div class="cartp">
 				<p>Continue shopping</p>
 				<button class="checkbut">
-					<a href="./modesensSignUp.html">Checkout</a>
+					<a href="./modesensSignUp.html">Go To Checkout</a>
 				</button>
 			</div>
 		</div>

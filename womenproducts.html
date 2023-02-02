@@ -7,15 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Document</title>
 	<style>
-		* {
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-				Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-		}
-
-		* {
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-				Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-		}
+* {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;}
+* {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;}
 
 		.header {
 			position: relative;
@@ -130,21 +123,14 @@
 			display: flex;
 		}
 
-		.container {
-			width: 100%;
-			margin: 2% auto;
-			display: grid;
-			justify-content: space-around;
-			grid-template-columns: 15% 85%
-		}
 
-		.container>div:nth-child(2) {
-			width: 90%;
+
+		.container>div:nth-child(1) {
+			width: 80%;
 			margin: 2% auto;
 			display: grid;
 			justify-content: space-around;
 			grid-template-columns: 23% 23% 23% 23%;
-
 		}
 
 		.product-item {
@@ -166,32 +152,22 @@
 			color: #8e8e8e;
 		}
 
-
-		.addcartbut {
+		
+        .addcartbut {
 			border: 1px solid black;
 			padding: 5px 40px;
 			background-color: transparent;
-			opacity: 1;
+			
 		}
-
 		.addcartbut:hover {
-			border: 1px solid black;
+			border: 2px solid blue;
 			padding: 5px 40px;
 			background-color: black;
 			color: white;
-
 		}
-.filter_div{
-	display: flex;
-	flex-direction: column;
-	gap: 1%;
-	align-items: center;
-}
-		.button-value {
-			background-color: black;
-			color: white;
-			width: 60%;
-			border-radius: 5px;
+
+		.hide{
+			display: none;
 		}
 	</style>
 </head>
@@ -205,7 +181,7 @@
 						width="147" alt="logo" /></a>
 			</div>
 			<div class="headdiv1">
-				<div><a href="./womenproducts.html">WOMEN</a></div>
+				<div><a href="./product.html">WOMEN</a></div>
 				<div><a href="./product.html">MEN</a></div>
 				<div><a href="./product.html">KIDS</a></div>
 				<div><a href="./product.html">HOME</a></div>
@@ -220,14 +196,12 @@
 					<a href="./cart.html">
 						<img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="" /></a>
 				</div>
-				<p id="cartlength"></p>
-
 				<div>
 					<img src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt="" />
 				</div>
 
 				<div>
-					<img class="alignc" src="https://modesens.com/static/img/20200612search_img1.svg" alt="" />
+					<img class="alignc" src="	https://modesens.com/static/img/20200612search_img1.svg" alt="" />
 					SEARCH
 				</div>
 			</div>
@@ -244,22 +218,12 @@
 				one place. Discover the latest designer jeans for men at ModeSens.
 			</p>
 		</div>
-
 		<div class="container">
-
-			<div class="filter_div">
-				<h3>Filter By Brand</h3>
-				<button class="button-value" onclick="show(data)">ALL</button>
-				<button class="button-value" onclick="filterProducts('AMIRI')">AMIRI</button>
-				<button class="button-value" onclick="filterProducts('BALMAIN')">BALMAIN</button>
-				<button class="button-value" onclick="filterProducts('REEBOK')">REEBOK</button>
-				<button class="button-value" onclick="filterProducts('PALM ANGELS')">PALM ANGELS</button>
-			</div>
-
+			<!-- <div>Filters</div> -->
 			<div id="product-container"></div>
 		</div>
 	</body>
 
 </html>
 
-<script src="./product.js"></script>
+<script src="./womenproducts.js"></script>
