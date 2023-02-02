@@ -5,9 +5,9 @@
 
 .header {
 	position: relative;
-	height: 60px;
+	height: 4rem;
 	justify-content: space-around;
-	margin-left: -10px;
+	margin-left: -0.65rem;
 	box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
 	z-index: 10;
 	background-color: white;
@@ -19,8 +19,8 @@
 .headdiv1 {
 	display: flex;
 	justify-content: space-around;
-	width: 750px;
-	height: 24px;
+	width: 50rem;
+	height: 1.6rem;
 	align-items: center;
 	margin-right: 10%;
 }
@@ -35,14 +35,14 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 150px;
-	height: 21px;
+	width: 10rem;
+	height: 1.5rem;
 	margin-right: 2%;
 }
 
 .headdiv2 > div:nth-child(1) > a > img {
-	width: 20px;
-	height: 20px;
+	width: 1.5rem;
+	height: 1.5rem;
 }
 .search_nav {
 	text-decoration: none;
@@ -79,14 +79,14 @@
 
 .banner1 {
 	width: 90%;
-	height: 400px;
+	height: 27rem;
 }
 
 .banner2 {
 	width: 90%;
-	height: 285px;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	height: 20rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	align-content: center;
 	align-items: center;
 }
@@ -125,7 +125,7 @@
 
 .selec {
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 1.8 rem;
 }
 
 .t2 {
@@ -451,16 +451,4 @@
 .footminip > img {
 	width: 100%;
 	height: 100%;
-}
-
-.circle {
-	height: 24px;
-	width: 24px;
-	border-radius: 24px;
-	background-color: black;
-	position: fixed;
-	top: 0;
-	left: 0;
-	pointer-events: none;
-	z-index: 99999999; /* so that it stays on top of all other elements */
 }
