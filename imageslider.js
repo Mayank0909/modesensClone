@@ -27,6 +27,11 @@ function slideshow(num) {
 	slides[num].style.display = "block";
 }
 
+setInterval(() => {
+	show(1);
+}, 2000);
+
+//Mouse Animation
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 

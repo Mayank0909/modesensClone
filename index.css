@@ -44,7 +44,10 @@
 	width: 20px;
 	height: 20px;
 }
-
+.search_nav {
+	text-decoration: none;
+	color: black;
+}
 .sticky {
 	position: fixed;
 	top: 0;

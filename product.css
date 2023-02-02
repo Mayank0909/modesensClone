@@ -1,0 +1,186 @@
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+	position: relative;
+	height: 60px;
+	justify-content: space-around;
+	margin-left: -10px;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+	z-index: 10;
+	background-color: white;
+	font-size: 12px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.headdiv1 {
+	display: flex;
+	justify-content: space-around;
+	width: 750px;
+	height: 24px;
+	align-items: center;
+	margin-right: 10%;
+}
+
+.headdiv1 > div > a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+.headdiv1 > div > a :hover {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+.search_nav {
+	text-decoration: none;
+	color: black;
+}
+.headdiv2 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 150px;
+	height: 21px;
+	margin-right: 2%;
+}
+
+.headdiv2 > div:nth-child(1) > a > img {
+	width: 20px;
+	height: 20px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.textc {
+	text-align: center !important;
+}
+
+.marg {
+	margin: auto;
+}
+
+.alignc {
+	align-items: center;
+}
+
+.dflex {
+	display: flex;
+	align-items: center;
+}
+
+.nav-logo {
+	position: absolute;
+	align-content: flex-start;
+	transform: translateX(-50%);
+}
+
+.bantop {
+	width: 98%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+
+.bottom-left {
+	position: absolute;
+	top: 130px;
+	left: 80px;
+	font-size: 50px;
+	color: black;
+}
+
+.designer {
+	margin: auto;
+	text-align: left;
+	margin-left: 20%;
+	margin-bottom: 50px;
+}
+
+.designer > p {
+	font-size: 12px;
+}
+
+.bantop > img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.container {
+	display: flex;
+}
+
+.container {
+	width: 100%;
+	margin: 2% auto;
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: 15% 85%;
+}
+
+.container > div:nth-child(2) {
+	width: 90%;
+	margin: 2% auto;
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: 23% 23% 23% 23%;
+}
+
+.product-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 420px;
+	border: 1px solid #f5f5f5;
+}
+
+.product-item > div:nth-child(1) > img {
+	width: 100%;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.productname {
+	font-size: 12px;
+	color: #8e8e8e;
+}
+
+.addcartbut {
+	border: 1px solid black;
+	padding: 5px 40px;
+	background-color: transparent;
+	opacity: 1;
+}
+
+.addcartbut:hover {
+	border: 2px solid grey;
+	padding: 5px 40px;
+	background-color: black;
+	color: white;
+}
+.filter_div {
+	display: flex;
+	flex-direction: column;
+	gap: 1%;
+	align-items: center;
+}
+.button-value {
+	background-color: black;
+	color: white;
+	width: 60%;
+	border-radius: 5px;
+}

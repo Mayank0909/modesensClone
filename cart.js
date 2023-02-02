@@ -60,7 +60,7 @@ function showCart(x) {
 			deleteFunc(el, ind1);
 		});
 
-		quant.append(plus, qP, minus, deleteButton);
+		quant.append(deleteButton);
 
 		var price2 = document.createElement("div");
 		var price2P = document.createElement("p");

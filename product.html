@@ -6,194 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Document</title>
-	<style>
-		* {
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-				Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-		}
+	<link rel="stylesheet" href="product.css">
 
-		* {
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-				Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-		}
-
-		.header {
-			position: relative;
-			height: 60px;
-			justify-content: space-around;
-			margin-left: -10px;
-			box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
-			z-index: 10;
-			background-color: white;
-			font-size: 12px;
-			padding-right: 10px;
-			padding-left: 10px;
-		}
-
-		.headdiv1 {
-			display: flex;
-			justify-content: space-around;
-			width: 750px;
-			height: 24px;
-			align-items: center;
-			margin-right: 10%;
-		}
-
-		.headdiv1>div>a {
-			text-decoration: none;
-			color: black;
-			cursor: pointer;
-		}
-
-		.headdiv1>div>a :hover {
-			text-decoration: none;
-			color: black;
-			cursor: pointer;
-		}
-
-		.headdiv2 {
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			width: 150px;
-			height: 21px;
-			margin-right: 2%;
-		}
-
-		.headdiv2>div:nth-child(1)>a>img {
-			width: 20px;
-			height: 20px;
-		}
-
-		.sticky {
-			position: fixed;
-			top: 0;
-			width: 100%;
-		}
-
-		.textc {
-			text-align: center !important;
-		}
-
-		.marg {
-			margin: auto;
-		}
-
-		.alignc {
-			align-items: center;
-		}
-
-		.dflex {
-			display: flex;
-			align-items: center;
-		}
-
-		.nav-logo {
-			position: absolute;
-			align-content: flex-start;
-			transform: translateX(-50%);
-		}
-
-		.bantop {
-			width: 98%;
-			height: 250px;
-			margin: auto;
-			margin-bottom: 20px;
-			margin-top: 60px;
-		}
-
-		.bottom-left {
-			position: absolute;
-			top: 130px;
-			left: 80px;
-			font-size: 50px;
-			color: black;
-		}
-
-		.designer {
-			margin: auto;
-			text-align: left;
-			margin-left: 20%;
-			margin-bottom: 50px;
-		}
-
-		.designer>p {
-			font-size: 12px;
-		}
-
-		.bantop>img {
-			max-width: 100%;
-			max-height: 100%;
-		}
-
-		.container {
-			display: flex;
-		}
-
-		.container {
-			width: 100%;
-			margin: 2% auto;
-			display: grid;
-			justify-content: space-around;
-			grid-template-columns: 15% 85%
-		}
-
-		.container>div:nth-child(2) {
-			width: 90%;
-			margin: 2% auto;
-			display: grid;
-			justify-content: space-around;
-			grid-template-columns: 23% 23% 23% 23%;
-
-		}
-
-		.product-item {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			height: 420px;
-			border: 1px solid #f5f5f5;
-		}
-
-		.product-item>div:nth-child(1)>img {
-			width: 100%;
-			height: 200px;
-			margin-top: 20px;
-		}
-
-		.productname {
-			font-size: 12px;
-			color: #8e8e8e;
-		}
-
-
-		.addcartbut {
-			border: 1px solid black;
-			padding: 5px 40px;
-			background-color: transparent;
-			opacity: 1;
-		}
-
-		.addcartbut:hover {
-			border: 1px solid black;
-			padding: 5px 40px;
-			background-color: black;
-			color: white;
-
-		}
-.filter_div{
-	display: flex;
-	flex-direction: column;
-	gap: 1%;
-	align-items: center;
-}
-		.button-value {
-			background-color: black;
-			color: white;
-			width: 60%;
-			border-radius: 5px;
-		}
-	</style>
 </head>
 
 <body>
@@ -206,14 +20,12 @@
 			</div>
 			<div class="headdiv1">
 				<div><a href="./womenproducts.html">WOMEN</a></div>
-				<div><a href="./product.html">MEN</a></div>
-				<div><a href="./product.html">KIDS</a></div>
-				<div><a href="./product.html">HOME</a></div>
-				<div><a href="./product.html">BEAUTY</a></div>
-				<div><a href="./product.html">OFFERS</a></div>
-				<div><a href="./product.html">DESIGNERS</a></div>
-				<div><a href="./product.html">COMMUNITY</a></div>
-				<div><a href="./product.html">WHY MODESENS</a></div>
+			<div><a href="./product.html">MEN</a></div>
+			<div><a href="./womenproducts.html">KIDS</a></div>
+			<div><a href="./womenproducts.html">BEAUTY</a></div>
+			<div><a href="./product.html">OFFERS</a></div>
+			<div><a href="./womenproducts.html">DESIGNERS</a></div>
+			<div><a href="./product.html">SALE</a></div>
 			</div>
 			<div class="headdiv2">
 				<div id='modesens-cart'>
@@ -223,13 +35,17 @@
 				<p id="cartlength"></p>
 
 				<div>
+				<a href="./modesensSignUp.html">
 					<img src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt="" />
-				</div>
+				</a>
+			</div>
 
-				<div>
+			<div>
+				<a href="./product.html" class="search_nav">
 					<img class="alignc" src="https://modesens.com/static/img/20200612search_img1.svg" alt="" />
 					SEARCH
-				</div>
+				</a>
+			</div>
 			</div>
 		</header>
 		<div class="bantop">
