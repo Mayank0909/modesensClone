@@ -6,6 +6,7 @@
 .header {
 	position: relative;
 	height: 4rem;
+	width: 100%;
 	justify-content: space-around;
 	margin-left: -0.65rem;
 	box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
